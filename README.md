@@ -5,7 +5,8 @@
 ---
 
 ### Stack Overflow Question 34553684
-Xcode project & source code related to [Would you like to configure an Objective-C bridging header](http://stackoverflow.com/a/34800492/218152) anwser.
+
+Xcode project & source code related to [Would you like to configure an Objective-C bridging header](https://stackoverflow.com/questions/34553684/import-objective-c-framework-cocoapod-into-swift/34800492#34800492) answer.
 
 ---
 
@@ -16,6 +17,6 @@ Xcode project & source code related to [Would you like to configure an Objective
 
 **References:**
 
-- SO-34553684 on [Stack Overflow](http://stackoverflow.com/questions/34553684/import-objective-c-framework-cocoapod-into-swift)
+- Question [34553684](https://stackoverflow.com/questions/34553684) on Stack Overflow
 - This and other answers posted on [Swift Recipes](http://swiftarchitect.com/recipes/)
 

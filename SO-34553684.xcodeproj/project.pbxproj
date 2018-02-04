@@ -19,6 +19,7 @@
 		071A2C22A23937511A73D288 /* Pods-SO-34553684.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SO-34553684.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SO-34553684/Pods-SO-34553684.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDDFCBE760FFD3D9CAF9FE4 /* Pods-SO-34553684.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SO-34553684.release.xcconfig"; path = "Pods/Target Support Files/Pods-SO-34553684/Pods-SO-34553684.release.xcconfig"; sourceTree = "<group>"; };
 		CF8D970DDF01EB1012B49D9D /* Pods_SO_34553684.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SO_34553684.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5317CA2026B7C700DE4E82 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		DC8F77551C470DDE00BF8A0B /* SO-34553684.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SO-34553684.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F77581C470DDE00BF8A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8F775A1C470DDE00BF8A0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				DC8F77611C470DDE00BF8A0B /* LaunchScreen.storyboard */,
 				DC8F77641C470DDE00BF8A0B /* Info.plist */,
 				DC8F776A1C470E1000BF8A0B /* SO-34553684-Bridging-Header.h */,
+				DC5317CA2026B7C700DE4E82 /* Podfile */,
 			);
 			path = "SO-34553684";
 			sourceTree = "<group>";
@@ -167,13 +169,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SO-34553684-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8E86DE4E92B93976F96F73B /* [CP] Copy Pods Resources */ = {
